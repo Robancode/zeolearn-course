@@ -26,10 +26,16 @@ const add = (greeting, x, y) => {
 };
 
 const greetUser = (user = "alex", age = 18) =>
-  console.log("hellow " + user + " you are " + age + " years old");
+  // template strings
+  console.log(`hello ${user} you are ${age} years old`);
 
 add("result", 4, 0);
 add("result*10", 40, 50);
 greetUser("john", 34);
 greetUser("krishna");
 greetUser();
+
+// task: implement a basic arthimetic calculator using arrow functions.
+
+// calculator('add', 4,5);
+// result is 9
