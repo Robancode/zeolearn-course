@@ -1,0 +1,72 @@
+Prerequisites
+
+xml - structure data
+es6, typescript, json (javascript object notation) - data interchange format
+
+Statement - single line of code
+
+Block of code - collection of statements -> function()
+
+statements -> arrow function - lot
+
+strong typing
+
+var a = 5;
+a = 'john'; // no error
+
+var a: number = 5;
+a = 'john' // pop an error
+
+
+Introduction react -> VDOM vs DOM
+dependencies
+webpack - bundler
+babel
+
+Setup
+
+Components
+
+Presentation (UI)-container(controls) design
+
+JSX
+
+State & Props (data management)
+
+
+<HTML>
+
+
+</HTML>
+
+polyfills
+
+
+Life cycle hooks - common
+
+Routing
+
+HTTP Request (axios)
+
+Contexts
+
+Forms
+
+Hooks - functional component
+
+Redux
+
+Testing - jest, react testing library 
+
+
+
+IDE - Integrated Development Environment - Code Editors
+
+VSCode - supporting addons
+
+NodeJS - NPM
+
+Typescript
+
+npm install -g typescript
+
