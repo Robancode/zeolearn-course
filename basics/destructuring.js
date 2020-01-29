@@ -4,7 +4,8 @@ const sandwich = {
   cheese: "swiss",
   toppings: ["lettuce", "tomato", "mustard"]
 };
-// object destructuring
+// object destructuring - trying to pull the data from object and
+// make it available as a local variables
 let { bread, meat } = sandwich;
 console.log(bread, sandwich);
 bread = "garlic"; // temporary
