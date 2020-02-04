@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from "react";
+import "./App.css";
+import First from "./components/First";
+import Second from "./components/Second";
+export default class App extends Component {
+  // lifecycle hook
+  // class variable
+  classdata = "test data";
+  render() {
+    // local variable
+    const localdata = "local value";
+    return (
+      <React.Fragment>
+        <First />
+        <Second />
+        {/* <h1>Hello world</h1>
+        <h2>
+          {this.classdata} {localdata}
+        </h2>
+        <img
+          className="myimg"
+          src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg"
+        /> */}
+      </React.Fragment>
+    );
+    // return React.createElement(
+    //   "div",
+    //   { className: "App", id: "myid", style: { color: "red" } },
+    //   React.createElement("img", {
+    //     className: "myimg",
+    //     src:
+    //       "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg"
+    //   })
+    // );
+  }
 }
-
-export default App;
+// export default App;

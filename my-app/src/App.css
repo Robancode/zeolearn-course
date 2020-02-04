@@ -1,12 +1,18 @@
 .App {
   text-align: center;
 }
-
+#myid {
+  color: green;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.myimg {
+  border-radius: 15px;
+  height: 120px;
+  width: 120px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
