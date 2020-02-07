@@ -29,6 +29,11 @@ class Blogs extends Component {
       }
     ]
   };
+  clickHandler = () => {
+    this.setState({
+      title: "another title"
+    });
+  };
   render() {
     //  const headingStyle = { textAlign: "center", color: "green" };
     return (
@@ -36,7 +41,11 @@ class Blogs extends Component {
         <h1 className="heading">My Blog!</h1>
         <div className="article-container">
           {this.state.blogs.map(item => (
-            <Article key={item.id} title={item.title} content={item.content} />
+            <Article
+              key={item.id}
+              article={item}
+              handleClick={this.clickHandler}
+            />
           ))}
         </div>
       </React.Fragment>

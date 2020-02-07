@@ -4,13 +4,18 @@ import First from "./components/First";
 import Second from "./components/Second";
 import Blog from "./components/First/Blog";
 import Blogs from "./components/Blogs";
+import Conditional from "./components/Conditional";
+import Cart from "./components/Cart";
 // import cat from "./catimg.jpeg";
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
-        <Blogs />
+        <Cart />
+        {/* <Conditional /> */}
+
+        {/* <Blogs /> */}
         {/* <Blog /> */}
         {/* <First /> */}
         {/* <Second /> */}
