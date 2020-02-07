@@ -1,19 +1,24 @@
-var Rectangle = (function () {
+// class definition
+var Rectangle = /** @class */ (function () {
     function Rectangle() {
+        var _this = this;
+        // member functions - methods
+        this.area = function () {
+            var area = _this.length * _this.breadth;
+            console.log(area);
+        };
+        this.perimeter = function () {
+            var perimeter = 2 * (_this.length + _this.breadth);
+            console.log(perimeter);
+        };
+        console.log("constructor called");
     }
-    // member functions
-    Rectangle.prototype.area = function () {
-        var area = this.length * this.breadth;
-        console.log(area);
-    };
-    Rectangle.prototype.perimeter = function () {
-        var perimeter = 2 * (this.length + this.breadth);
-        console.log(perimeter);
-    };
     return Rectangle;
-})();
+}());
+// create instance of class
 var rect = new Rectangle();
-rect.length = 45;
-rect.breadth = 56;
-rect.area();
-rect.perimeter();
+var rect2 = new Rectangle();
+// rect.length = 45;
+// rect.breadth = 56;
+// rect.area();
+// rect.perimeter();

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import First from "./components/First";
 import Second from "./components/Second";
+import Blog from "./components/First/blog";
+import Blogs from "./components/Blogs";
+import Conditional from "./components/Conditional";
 export default class App extends Component {
   // lifecycle hook
   // class variable
@@ -11,8 +14,10 @@ export default class App extends Component {
     const localdata = "local value";
     return (
       <React.Fragment>
-        <First />
-        <Second />
+        <Conditional />
+        {/* <Blogs /> */}
+        {/* <First /> */}
+        {/* <Second /> */}
         {/* <h1>Hello world</h1>
         <h2>
           {this.classdata} {localdata}
