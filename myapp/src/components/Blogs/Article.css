@@ -1,0 +1,14 @@
+p {
+  background: #ccc;
+  font-size: 16px;
+  padding: 10px;
+}
+h2,
+h1 {
+  text-align: center;
+}
+.article-block {
+  border: 1px solid #333;
+  border-radius: 5px;
+  height: 100%;
+}
