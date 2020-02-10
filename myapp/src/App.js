@@ -12,10 +12,9 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <Cart />
+        {/* <Cart /> */}
         {/* <Conditional /> */}
-
-        {/* <Blogs /> */}
+        <Blogs />
         {/* <Blog /> */}
         {/* <First /> */}
         {/* <Second /> */}

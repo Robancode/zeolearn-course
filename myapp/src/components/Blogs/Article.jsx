@@ -5,7 +5,7 @@ class Article extends Component {
     date: "7/2/2020"
   };
   render() {
-    console.log(this.props, this.state);
+    // console.log(this.props, this.state);
     return (
       <div>
         <div className="article-block" id={this.props.article.id}>

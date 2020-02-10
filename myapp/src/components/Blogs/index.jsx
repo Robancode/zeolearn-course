@@ -29,11 +29,22 @@ class Blogs extends Component {
       }
     ]
   };
-  clickHandler = () => {
-    this.setState({
-      title: "another title"
-    });
+
+  //  clickhandler aim: change the state of current title
+  // and set it to "new title".
+  // copy the state to an immutable variable
+  // find the id of the component
+  // reassign the state of the title of that id
+
+  clickHandler = currentArticle => {
+    // const newThang = { ...currentArticle };
+    // newThang.title = "new thang";
+    // console.log(currentArticle);
+    this.setState(
+      oldState => (oldState.blogs[currentArticle.id - 1].title = "new Title")
+    );
   };
+
   render() {
     //  const headingStyle = { textAlign: "center", color: "green" };
     return (
@@ -44,7 +55,8 @@ class Blogs extends Component {
             <Article
               key={item.id}
               article={item}
-              handleClick={this.clickHandler}
+              // need to pass each item into the child components
+              handleClick={() => this.clickHandler(item)}
             />
           ))}
         </div>
