@@ -5,6 +5,11 @@ import Second from "./components/Second";
 import Blog from "./components/First/blog";
 import Blogs from "./components/Blogs";
 import Conditional from "./components/Conditional";
+import Cart from "./components/Cart";
+import ClassComponent from "./components/ClassComponent";
+import FunctionComponent from "./components/FunctionalComponent";
+import A from "./components/LifeCycle/A";
+import Onchange from "./components/Inputs/Onchange";
 export default class App extends Component {
   // lifecycle hook
   // class variable
@@ -14,7 +19,12 @@ export default class App extends Component {
     const localdata = "local value";
     return (
       <React.Fragment>
-        <Conditional />
+        <Onchange />
+        {/* <A /> */}
+        {/* <ClassComponent /> */}
+        {/* <FunctionComponent /> */}
+        {/* <Cart /> */}
+        {/* <Conditional /> */}
         {/* <Blogs /> */}
         {/* <First /> */}
         {/* <Second /> */}
