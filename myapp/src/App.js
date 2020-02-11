@@ -11,15 +11,17 @@ import Refs from "./components/Refs";
 import UserValidation from "./components/UserValidation";
 // import cat from "./catimg.jpeg";
 import Routing from "./components/Routing";
+import Calculator2 from "./components/Calculator2";
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
+        <Calculator2 />
         {/* <Routing /> */}
         {/* <UserValidation /> */}
         {/* <Refs /> */}
-        <Calculator />
+        {/* <Calculator /> */}
         {/* <Cart /> */}
         {/* <Conditional /> */}
         {/* <Blogs /> */}
