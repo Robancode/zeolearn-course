@@ -41,7 +41,7 @@ class Blogs extends Component {
     // newThang.title = "new thang";
     // console.log(currentArticle);
     this.setState(
-      oldState => (oldState.blogs[currentArticle.id - 1].title = "new Title")
+      oldState => (oldState.blogs[currentArticle.id - 1].title = "New Title")
     );
   };
 

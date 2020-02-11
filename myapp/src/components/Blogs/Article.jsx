@@ -9,9 +9,7 @@ class Article extends Component {
     return (
       <div>
         <div className="article-block" id={this.props.article.id}>
-          <button onClick={() => this.props.handleClick()}>
-            Change Title!
-          </button>
+          <button onClick={e => this.props.handleClick(e)}>Change Title</button>
           <h2>{this.props.article.title}</h2>
           <p>{this.state.date}</p>
           <p className="article-paragraph">{this.props.article.content}</p>
