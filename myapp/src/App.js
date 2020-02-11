@@ -6,15 +6,23 @@ import Blog from "./components/First/Blog";
 import Blogs from "./components/Blogs";
 import Conditional from "./components/Conditional";
 import Cart from "./components/Cart";
+import Calculator from "./components/Calculator";
+import Refs from "./components/Refs";
+import UserValidation from "./components/UserValidation";
 // import cat from "./catimg.jpeg";
+import Routing from "./components/Routing";
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
+        {/* <Routing /> */}
+        {/* <UserValidation /> */}
+        {/* <Refs /> */}
+        <Calculator />
         {/* <Cart /> */}
         {/* <Conditional /> */}
-        <Blogs />
+        {/* <Blogs /> */}
         {/* <Blog /> */}
         {/* <First /> */}
         {/* <Second /> */}

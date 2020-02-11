@@ -2,13 +2,13 @@ class Calculator {
   // data members
   numberOne: number;
   numberTwo: number;
-  numberThree?: number;
+  // numberThree?: number;
   //  result:number;
 
   // member functions
   add = () => {
     // this.result= this.numberOne + this.numberTwo;
-    let result = this.numberOne + this.numberTwo + this.numberThree;
+    let result = this.numberOne + this.numberTwo; //+ this.numberThree;
     console.log(result);
   };
   subtract = () => {
