@@ -1,0 +1,13 @@
+.index {
+  display: grid;
+  grid-template-columns: 8em auto;
+}
+
+.nav-list-items {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-list-items > a {
+  text-decoration: none;
+}

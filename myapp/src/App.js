@@ -17,8 +17,8 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <Calculator2 />
-        {/* <Routing /> */}
+        {/* <Calculator2 /> */}
+        <Routing />
         {/* <UserValidation /> */}
         {/* <Refs /> */}
         {/* <Calculator /> */}
