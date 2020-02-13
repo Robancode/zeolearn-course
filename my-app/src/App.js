@@ -10,6 +10,11 @@ import ClassComponent from "./components/ClassComponent";
 import FunctionComponent from "./components/FunctionalComponent";
 import A from "./components/LifeCycle/A";
 import Onchange from "./components/Inputs/Onchange";
+import Refs from "./components/Refs";
+import Routing from "./components/Routing";
+import PropsDemo from "./components/PropsDemo";
+
+import HttpDemo from "./components/HTTP/Get";
 export default class App extends Component {
   // lifecycle hook
   // class variable
@@ -19,7 +24,11 @@ export default class App extends Component {
     const localdata = "local value";
     return (
       <React.Fragment>
-        <Onchange />
+        <HttpDemo />
+        {/* <PropsDemo /> */}
+        {/* <Routing /> */}
+        {/* <Refs /> */}
+        {/* <Onchange /> */}
         {/* <A /> */}
         {/* <ClassComponent /> */}
         {/* <FunctionComponent /> */}
