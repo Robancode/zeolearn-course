@@ -1,21 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
-class About extends Component {
-  state = {};
-  render() {
-    return (
-      <>
-        <h2>About page</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.{" "}
-          <Link to="contact">contact</Link>Delectus aperiam maiores,
-          necessitatibus, ea reprehenderit corporis iusto deleniti illum neque
-          dolorem odio illo quibusdam, fuga accusamus aliquam ducimus reiciendis
-          est dicta.
-        </p>
-      </>
-    );
-  }
+
+function About() {
+  return (
+    <div>
+      <h2>About Page</h2>
+      <p>
+        Lorem ipsum dolor sit amet <Link to="/contact">Contact</Link>consectetur
+        adipisicing elit. Minus iste sunt inventore hic vero accusamus eos ad
+        quidem perferendis tempore velit provident, repudiandae at in incidunt
+        fuga officiis autem fugit?
+      </p>
+    </div>
+  );
 }
 
 export default About;

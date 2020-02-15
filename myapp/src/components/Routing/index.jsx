@@ -1,54 +1,47 @@
 import React, { Component } from "react";
-import "./index.css";
-import {
-  BrowserRouter as Router,
-  Link,
-  Route,
-  NavLink
-} from "react-router-dom";
-import About from "./About";
-import Blogs from "../Blogs/";
-import Calculator2 from "../Calculator2";
-import Conditional from "../Conditional";
 
-class Routing extends Component {
-  state = {};
-  render() {
-    return (
-      <div className="index">
-        <Router className="router">
-          <div className="nav-container">
-            <ul className="nav-list-items">
-              <NavLink
-                exact
-                activeStyle={{ color: "purple", fontWeight: "bold" }}
-                to="/"
-              >
-                <li>Home</li>
-              </NavLink>
-              <NavLink
-                activeStyle={{ color: "purple", fontWeight: "bold" }}
-                to="/blogs"
-              >
-                <li>Blogs</li>
-              </NavLink>
-              <NavLink
-                activeStyle={{ color: "purple", fontWeight: "bold" }}
-                to="/calculator"
-              >
-                <li>Calculator</li>
-              </NavLink>
-            </ul>
-          </div>
-          <div className="page-content">
-            <Route exact path="/" component={Conditional} />
-            <Route path="/blogs" component={Blogs} />
-            <Route path="/calculator" component={Calculator2} />
-          </div>
-        </Router>
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import About from "./About";
+import Animals from "./Animals";
+
+function Routing() {
+  return (
+    <Router>
+      <div>
+        <ul>
+          <NavLink exact activeStyle={{ color: "pink" }} to="/">
+            <li>Home</li>
+          </NavLink>
+          <NavLink exact activeStyle={{ color: "pink" }} to="/about">
+            <li>About</li>
+          </NavLink>
+          <NavLink exact activeStyle={{ color: "pink" }} to="/contact">
+            <li>Contact</li>
+          </NavLink>
+          <NavLink exact activeStyle={{ color: "pink" }} to="/animals">
+            <li>Animals</li>
+          </NavLink>
+        </ul>
       </div>
-    );
-  }
+      <div>
+        <Route
+          exact
+          path="/"
+          component={() => {
+            return <h2>Home</h2>;
+          }}
+        />
+        <Route path="/about" component={About} />
+        <Route
+          path="/contact"
+          component={() => {
+            return <h2>Contact</h2>;
+          }}
+        />
+        <Route path="/animals" component={Animals} />
+      </div>
+    </Router>
+  );
 }
 
 export default Routing;

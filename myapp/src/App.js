@@ -11,13 +11,21 @@ import Refs from "./components/Refs";
 import UserValidation from "./components/UserValidation";
 // import cat from "./catimg.jpeg";
 import Routing from "./components/Routing";
+import Routing2 from "./components/Routing2";
 import Calculator2 from "./components/Calculator2";
+import ClassDemoForState from "./components/Hooks/ClassDemoForState";
+import FunctionDemoForState from "./components/Hooks/ClassDemoForState";
+import EffectDemo from "./components/Hooks/EffectDemo";
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
+        {/* <EffectDemo /> */}
+        {/* <ClassDemoForState /> */}
+        {/* <FunctionDemoForState /> */}
         {/* <Calculator2 /> */}
+        {/* <Routing2 /> */}
         <Routing />
         {/* <UserValidation /> */}
         {/* <Refs /> */}
