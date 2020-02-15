@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import About from "./About";
-import Animals from "./Animals";
+import ShoppingList from "./ShoppingList";
 
 function Routing() {
   return (
@@ -18,8 +18,8 @@ function Routing() {
           <NavLink exact activeStyle={{ color: "pink" }} to="/contact">
             <li>Contact</li>
           </NavLink>
-          <NavLink exact activeStyle={{ color: "pink" }} to="/animals">
-            <li>Animals</li>
+          <NavLink exact activeStyle={{ color: "pink" }} to="/shopping-list">
+            <li>Shopping List</li>
           </NavLink>
         </ul>
       </div>
@@ -38,7 +38,7 @@ function Routing() {
             return <h2>Contact</h2>;
           }}
         />
-        <Route path="/animals" component={Animals} />
+        <Route path="/shopping-list" component={ShoppingList} />
       </div>
     </Router>
   );
