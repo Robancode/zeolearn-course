@@ -16,17 +16,19 @@ import Calculator2 from "./components/Calculator2";
 import ClassDemoForState from "./components/Hooks/ClassDemoForState";
 import FunctionDemoForState from "./components/Hooks/ClassDemoForState";
 import EffectDemo from "./components/Hooks/EffectDemo";
+import PropsDemo from "./components/PropsDemo";
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
+        <PropsDemo />
         {/* <EffectDemo /> */}
         {/* <ClassDemoForState /> */}
         {/* <FunctionDemoForState /> */}
         {/* <Calculator2 /> */}
         {/* <Routing2 /> */}
-        <Routing />
+        {/* <Routing /> */}
         {/* <UserValidation /> */}
         {/* <Refs /> */}
         {/* <Calculator /> */}
