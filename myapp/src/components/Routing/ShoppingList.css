@@ -8,10 +8,12 @@
 }
 
 .shopping-list--paper {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 5px grey;
   width: 400px;
   height: 500px;
   padding: 50px 20px 50px 20px;
+  background-color: #ffff99;
 }
 
 .shopping-list--content {

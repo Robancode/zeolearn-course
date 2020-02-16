@@ -12,10 +12,15 @@ function ShoppingList() {
   ]);
   const inputRef = React.createRef();
   const addItem = () => {
-    setLinks([
-      ...links,
-      { id: links.length + 1, link: inputRef.current.value }
-    ]);
+    if (inputRef.current.value == "") {
+      return null;
+    } // once the new link is set, clear the previous input ref
+    else
+      setLinks([
+        ...links,
+        { id: links.length + 1, link: inputRef.current.value }
+      ]);
+    inputRef.current.value = "";
   };
   return (
     <div className="shopping-list">

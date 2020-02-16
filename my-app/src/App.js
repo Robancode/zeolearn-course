@@ -27,13 +27,13 @@ export default class App extends Component {
     const localdata = "local value";
     return (
       <React.Fragment>
-        <EffectDemo />
+        {/* <EffectDemo /> */}
         {/* <FunctionDemoForState /> */}
         {/* <ClassDemoForState /> */}
         {/* <HttpDemo /> */}
         {/* <PropsDemo /> */}
-        <Routing />
-        {/* <Refs /> */}
+        {/* <Routing /> */}
+        <Refs />
         {/* <Onchange /> */}
         {/* <A /> */}
         {/* <ClassComponent /> */}
