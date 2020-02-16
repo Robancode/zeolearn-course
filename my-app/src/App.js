@@ -15,6 +15,9 @@ import Routing from "./components/Routing";
 import PropsDemo from "./components/PropsDemo";
 
 import HttpDemo from "./components/HTTP/Get";
+import ClassDeFumoForState from "./components/Hooks/ClassDemoForState";
+import FunctionDemoForState from "./components/Hooks/ClassDemoForState";
+import EffectDemo from "./components/Hooks/EffectDemo";
 export default class App extends Component {
   // lifecycle hook
   // class variable
@@ -24,6 +27,9 @@ export default class App extends Component {
     const localdata = "local value";
     return (
       <React.Fragment>
+        <EffectDemo />
+        {/* <FunctionDemoForState /> */}
+        {/* <ClassDemoForState /> */}
         {/* <HttpDemo /> */}
         {/* <PropsDemo /> */}
         <Routing />
