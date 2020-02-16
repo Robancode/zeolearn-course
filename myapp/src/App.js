@@ -17,12 +17,14 @@ import ClassDemoForState from "./components/Hooks/ClassDemoForState";
 import FunctionDemoForState from "./components/Hooks/ClassDemoForState";
 import EffectDemo from "./components/Hooks/EffectDemo";
 import PropsDemo from "./components/PropsDemo";
+import StateOfStudents from "./components/StateOfStudents";
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
-        <PropsDemo />
+        <StateOfStudents />
+        {/* <PropsDemo /> */}
         {/* <EffectDemo /> */}
         {/* <ClassDemoForState /> */}
         {/* <FunctionDemoForState /> */}

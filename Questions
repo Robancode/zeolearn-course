@@ -3,3 +3,9 @@
 Q: When looking at someone's code for the first time,
     how do you understand the code? 
     Do you first look at the state, or the render method?
+
+
+16/02/2020
+
+Q: when using API endpoints, how risky is it? 
+    The data isn't stored locally so there's no control
