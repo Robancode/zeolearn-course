@@ -19,12 +19,15 @@ import EffectDemo from "./components/Hooks/EffectDemo";
 import PropsDemo from "./components/PropsDemo";
 import StateOfStudents from "./components/StateOfStudents";
 import HttpDemo from "./components/HTTP/Get";
+import HttpDemoHooks from "./components/HTTPWithHooks/Get";
+
 export default class App extends Component {
   classdata = "test data";
   render() {
     return (
       <>
-        <HttpDemo />
+        <HttpDemoHooks />
+        {/* <HttpDemo /> */}
         {/* <StateOfStudents /> */}
         {/* <PropsDemo /> */}
         {/* <EffectDemo /> */}
