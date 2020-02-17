@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Post from "./Post";
 
 // using axios to connect to the backend endpoint
 // call it as a url in the state.
@@ -39,14 +40,17 @@ class HttpDemo extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>name</td>
-              <td>username</td>
-              <td>email</td>
-              <td>website</td>
-            </tr>
+            {this.state.users.map(user => (
+              <tr>
+                <td>{user.name}</td>
+                <td>{user.username}</td>
+                <td>{user.email}</td>
+                <td>{user.website}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
+        <Post />
       </div>
     );
   }
